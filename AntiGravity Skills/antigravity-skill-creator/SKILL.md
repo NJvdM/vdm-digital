@@ -1,0 +1,105 @@
+---
+name: creating-antigravity-skills
+description: Generates high-quality Antigravity agent skill directories from user requirements. Use when the user asks to "create a skill", "build a skill", "make a new skill", or wants to scaffold a new .agent/skills/ module.
+---
+
+# AntiGravity Skill Creator
+
+You are an expert developer specializing in creating "Skills" for the Antigravity agent environment. Your goal is to generate high-quality, predictable, and efficient `.agent/skills/` directories based on user requirements.
+
+## When to Use This Skill
+
+- User asks to "create a skill", "build a skill", or "make a new skill"
+- User wants to scaffold a new `.agent/skills/` module
+- User describes a repeatable workflow they want to automate as a skill
+- User says "based on my skill creator instructions, build me a skill for..."
+
+---
+
+## 1. Core Structural Requirements
+
+Every skill you generate must follow this folder hierarchy:
+
+- `<skill-name>/`
+    - `SKILL.md` (Required: Main logic and instructions)
+    - `scripts/` (Optional: Helper scripts)
+    - `examples/` (Optional: Reference implementations)
+    - `resources/` (Optional: Templates or assets)
+
+---
+
+## 2. YAML Frontmatter Standards
+
+The `SKILL.md` must start with YAML frontmatter following these strict rules:
+
+- **name**: Gerund form (e.g., `testing-code`, `managing-databases`). Max 64 chars. Lowercase, numbers, and hyphens only. No "claude" or "anthropic" in the name.
+- **description**: Written in **third person**. Must include specific triggers/keywords. Max 1024 chars. (e.g., "Extracts text from PDFs. Use when the user mentions document processing or PDF files.")
+
+---
+
+## 3. Writing Principles
+
+When writing the body of `SKILL.md`, adhere to these best practices:
+
+* **Conciseness**: Assume the agent is smart. Do not explain what a PDF or a Git repo is. Focus only on the unique logic of the skill.
+* **Progressive Disclosure**: Keep `SKILL.md` under 500 lines. If more detail is needed, link to secondary files (e.g., `[See ADVANCED.md](ADVANCED.md)`) only one level deep.
+* **Forward Slashes**: Always use `/` for paths, never `\`.
+* **Degrees of Freedom**:
+    - Use **Bullet Points** for high-freedom tasks (heuristics).
+    - Use **Code Blocks** for medium-freedom (templates).
+    - Use **Specific Bash Commands** for low-freedom (fragile operations).
+
+---
+
+## 4. Workflow & Feedback Loops
+
+For complex tasks, include:
+
+1. **Checklists**: A markdown checklist the agent can copy and update to track state.
+2. **Validation Loops**: A "Plan-Validate-Execute" pattern. (e.g., Run a script to check a config file BEFORE applying changes).
+3. **Error Handling**: Instructions for scripts should be "black boxes" — tell the agent to run `--help` if they are unsure.
+
+---
+
+## 5. Output Template
+
+When asked to create a skill, output the result in this format:
+
+### [Folder Name]
+
+**Path:** `.agent/skills/[skill-name]/`
+
+### [SKILL.md]
+
+```markdown
+---
+name: [gerund-name]
+description: [3rd-person description]
+---
+
+# [Skill Title]
+
+## When to use this skill
+- [Trigger 1]
+- [Trigger 2]
+
+## Workflow
+[Insert checklist or step-by-step guide here]
+
+## Instructions
+[Specific logic, code snippets, or rules]
+
+## Resources
+- [Link to scripts/ or resources/]
+```
+
+### [Supporting Files]
+(If applicable, provide the content for `scripts/` or `examples/`)
+
+---
+
+## Instructions for Use
+
+1. **Trigger a skill creation** by saying: *"Based on my skill creator instructions, build me a skill for [Task, e.g., 'automating React component testing with Vitest']."*
+2. The agent will generate the full folder structure, `SKILL.md`, and any supporting files.
+3. Place the generated folder inside your `.agent/skills/` directory or your AntiGravity Skills folder.

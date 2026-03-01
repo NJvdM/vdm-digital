@@ -1,0 +1,15 @@
+{
+  "_comment": "Common Gamma theme IDs. Use themeId in the API payload. Check gamma.app for the latest list.",
+  "themes": [
+    { "id": "default",       "name": "Default",        "style": "Clean, neutral" },
+    { "id": "dark",          "name": "Dark Mode",       "style": "Dark background, light text" },
+    { "id": "minimal",       "name": "Minimal",         "style": "White space, simple typography" },
+    { "id": "bold",          "name": "Bold",            "style": "Strong colors, large headings" },
+    { "id": "corporate",     "name": "Corporate",       "style": "Professional, polished" },
+    { "id": "creative",      "name": "Creative",        "style": "Vibrant colors, playful layout" },
+    { "id": "tech",          "name": "Tech",            "style": "Modern, gradient accents" },
+    { "id": "elegant",       "name": "Elegant",         "style": "Serif fonts, refined palette" },
+    { "id": "startup",       "name": "Startup",         "style": "Energetic, forward-looking" },
+    { "id": "academic",      "name": "Academic",        "style": "Structured, content-dense" }
+  ]
+}

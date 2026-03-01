@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VDM Digital — E-Commerce Solutions That Scale</title>
+  <meta name="description"
+    content="VDM Digital is a professional web development agency specializing in end-to-end e-commerce solutions. We design, build, and manage robust online stores." />
+  <meta name="keywords" content="web development, e-commerce, online store, digital agency, VDM Digital" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__container">
+      <a href="/" class="nav__logo" id="nav-logo">
+        <img src="/images/vdm-logo.png" alt="VDM Digital" class="nav__logo-img" width="36" height="36" />
+        <span>VDM Digital</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#features" class="nav__link">Services</a></li>
+        <li><a href="#process" class="nav__link">Process</a></li>
+        <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+        <li><a href="/contact.html" class="nav__link nav__link--cta" id="nav-contact-btn">Get in Touch</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__gradient"></div>
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__particles" id="hero-particles"></div>
+    </div>
+    <div class="hero__container hero__container--split">
+      <div class="hero__text">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot"></span>
+          Trusted by growing brands
+        </div>
+        <h1 class="hero__title reveal">
+          We build online stores<br />
+          <span class="hero__title-gradient">that actually sell.</span>
+        </h1>
+        <p class="hero__subtitle reveal">
+          End-to-end e-commerce solutions — from design to launch to ongoing management. We handle the tech so you can
+          focus on growing your business.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="/contact.html" class="btn btn--primary" id="hero-cta">
+            Start Your Project
+            <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#features" class="btn btn--ghost" id="hero-learn-more">
+            Learn More
+          </a>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__mockup">
+          <div class="hero__mockup-glow"></div>
+          <img src="/images/hero-dashboard.png"
+            alt="E-commerce dashboard showing product management, sales analytics, and order tracking"
+            class="hero__mockup-img" loading="eager" />
+          <div class="hero__mockup-beam"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__stats-bar reveal">
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="50">0</span><span class="hero__stat-suffix">+</span>
+          <span class="hero__stat-label">Stores Launched</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="98">0</span><span class="hero__stat-suffix">%</span>
+          <span class="hero__stat-label">Client Satisfaction</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="24">0</span><span class="hero__stat-suffix">/7</span>
+          <span class="hero__stat-label">Support Available</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Services Section -->
+  <section class="features" id="features">
+    <div class="features__container">
+      <div class="features__header reveal">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Everything you need to <span class="text-gradient">sell online</span></h2>
+        <p class="section-subtitle">From concept to checkout, we build and manage every piece of your e-commerce
+          ecosystem.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card feature-card--has-image reveal" id="feature-design">
+          <div class="feature-card__image-wrap">
+            <img src="/images/feature-design.png"
+              alt="Custom website design interface with color palettes and typography tools" class="feature-card__image"
+              loading="lazy" />
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Custom Store Design</h3>
+            <p class="feature-card__text">Bespoke e-commerce designs that reflect your brand identity and convert
+              visitors into customers. No templates — everything is built from scratch.</p>
+          </div>
+        </div>
+        <div class="feature-card feature-card--has-image reveal" id="feature-dev">
+          <div class="feature-card__image-wrap">
+            <img src="/images/feature-code.png" alt="Modern code editor with glowing syntax highlighting"
+              class="feature-card__image" loading="lazy" />
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Full-Stack Development</h3>
+            <p class="feature-card__text">Robust, scalable online stores built on modern frameworks. Lightning-fast load
+              times, secure payments, and seamless mobile experiences.</p>
+          </div>
+        </div>
+        <div class="feature-card feature-card--has-image reveal" id="feature-manage">
+          <div class="feature-card__image-wrap">
+            <img src="/images/feature-support.png" alt="Security shield with dashboard monitoring panels"
+              class="feature-card__image" loading="lazy" />
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Ongoing Management</h3>
+            <p class="feature-card__text">We don't just build and leave. Our team handles updates, security, inventory
+              sync, and performance monitoring so you never worry about the tech.</p>
+          </div>
+        </div>
+        <div class="feature-card feature-card--has-image reveal" id="feature-seo">
+          <div class="feature-card__image-wrap">
+            <img src="/images/feature-analytics.png" alt="Analytics dashboard with charts and data visualizations"
+              class="feature-card__image" loading="lazy" />
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">SEO & Analytics</h3>
+            <p class="feature-card__text">Data-driven optimization to get your store found and keep it growing. We set
+              up tracking, reporting, and continuous SEO improvements.</p>
+          </div>
+        </div>
+        <div class="feature-card feature-card--has-image reveal" id="feature-payment">
+          <div class="feature-card__image-wrap">
+            <img src="/images/feature-payment.png" alt="Secure payment processing with credit card and authentication"
+              class="feature-card__image" loading="lazy" />
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Payment Integration</h3>
+            <p class="feature-card__text">Seamless checkout experiences with Stripe, PayFast, PayPal, and more.
+              Multi-currency support and PCI-compliant security built in.</p>
+          </div>
+        </div>
+        <div class="feature-card feature-card--has-image reveal" id="feature-scale">
+          <div class="feature-card__image-wrap">
+            <img src="/images/feature-scale.png"
+              alt="Server infrastructure with rocket launch representing scalable growth" class="feature-card__image"
+              loading="lazy" />
+          </div>
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Scale With Confidence</h3>
+            <p class="feature-card__text">Infrastructure that grows with your business. From 100 to 100,000 orders per
+              month, your store stays fast and reliable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process" id="process">
+    <div class="process__container">
+      <div class="process__header reveal">
+        <span class="section-tag">How We Work</span>
+        <h2 class="section-title">A proven process, <span class="text-gradient">zero guesswork</span></h2>
+        <p class="section-subtitle">We've refined our approach across dozens of projects to deliver predictable,
+          exceptional results.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process-step process-step--visual reveal" id="step-1">
+          <div class="process-step__image-wrap">
+            <img src="/images/process-discovery.png" alt="Discovery phase with magnifying glass and wireframes"
+              class="process-step__image" loading="lazy" />
+          </div>
+          <div class="process-step__body">
+            <div class="process-step__number">01</div>
+            <h3 class="process-step__title">Discovery & Strategy</h3>
+            <p class="process-step__text">We dive deep into your business, audience, and goals. The result is a clear
+              roadmap and timeline — no surprises.</p>
+          </div>
+        </div>
+        <div class="process-step process-step--visual reveal" id="step-2">
+          <div class="process-step__image-wrap">
+            <img src="/images/process-design.png" alt="Design tools with Figma-like interface and color palettes"
+              class="process-step__image" loading="lazy" />
+          </div>
+          <div class="process-step__body">
+            <div class="process-step__number">02</div>
+            <h3 class="process-step__title">Design & Prototype</h3>
+            <p class="process-step__text">Interactive mockups you can click through before a single line of code is
+              written. We iterate until you love it.</p>
+          </div>
+        </div>
+        <div class="process-step process-step--visual reveal" id="step-3">
+          <div class="process-step__image-wrap">
+            <img src="/images/process-build.png" alt="Laptop with code and testing checkmarks"
+              class="process-step__image" loading="lazy" />
+          </div>
+          <div class="process-step__body">
+            <div class="process-step__number">03</div>
+            <h3 class="process-step__title">Build & Test</h3>
+            <p class="process-step__text">Clean, performant code with rigorous testing on every device and browser. We
+              handle all payment, shipping, and inventory integrations.</p>
+          </div>
+        </div>
+        <div class="process-step process-step--visual reveal" id="step-4">
+          <div class="process-step__image-wrap">
+            <img src="/images/process-launch.png" alt="Rocket launching with growth charts" class="process-step__image"
+              loading="lazy" />
+          </div>
+          <div class="process-step__body">
+            <div class="process-step__number">04</div>
+            <h3 class="process-step__title">Launch & Grow</h3>
+            <p class="process-step__text">Smooth go-live with ongoing support, performance monitoring, and iterative
+              improvements based on real user data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof / Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__container">
+      <div class="testimonials__header reveal">
+        <span class="section-tag">What Our Clients Say</span>
+        <h2 class="section-title">Trusted by businesses <span class="text-gradient">across industries</span></h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal" id="testimonial-1">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote class="testimonial-card__quote">"VDM Digital completely transformed our online presence. Our sales
+            increased by 340% in the first six months after launching our new store."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SM</div>
+            <div>
+              <div class="testimonial-card__name">Sarah Mitchell</div>
+              <div class="testimonial-card__role">CEO, Luxe Botanics</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" id="testimonial-2">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote class="testimonial-card__quote">"The ongoing support is what sets them apart. They're not just
+            developers — they're genuine partners in our growth. Highly recommend."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">JK</div>
+            <div>
+              <div class="testimonial-card__name">James Kruger</div>
+              <div class="testimonial-card__role">Founder, TechGear SA</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" id="testimonial-3">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote class="testimonial-card__quote">"From day one, the VDM team understood our vision. The store they
+            built is fast, beautiful, and our customers love the shopping experience."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">RP</div>
+            <div>
+              <div class="testimonial-card__name">Rachel Patel</div>
+              <div class="testimonial-card__role">CMO, Artisan Home Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta-section">
+    <div class="cta__container reveal">
+      <div class="cta__content">
+        <h2 class="cta__title">Ready to build your <span class="text-gradient">dream store?</span></h2>
+        <p class="cta__text">Let's talk about your project. No pressure, no jargon — just a straightforward conversation
+          about how we can help you sell more online.</p>
+        <div class="cta__actions">
+          <a href="/contact.html" class="btn btn--primary btn--large" id="cta-main-btn">
+            Get Your Free Consultation
+            <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="cta__glow"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="nav__logo">
+            <img src="/images/vdm-logo.png" alt="VDM Digital" class="nav__logo-img" width="36" height="36" />
+            <span>VDM Digital</span>
+          </a>
+          <p class="footer__tagline">Professional e-commerce solutions that help businesses sell more online.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Company</h4>
+            <a href="#features" class="footer__link">Services</a>
+            <a href="#process" class="footer__link">Process</a>
+            <a href="#testimonials" class="footer__link">Testimonials</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Connect</h4>
+            <a href="/contact.html" class="footer__link">Contact Us</a>
+            <a href="mailto:hello@vdmdigital.com" class="footer__link">hello@vdmdigital.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 VDM Digital. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — VDM Digital</title>
+    <meta name="description"
+        content="Get in touch with VDM Digital. Let's discuss your e-commerce project and how we can help your business grow online." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/main.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <a href="/" class="nav__logo" id="nav-logo">
+                <img src="/images/vdm-logo.png" alt="VDM Digital" class="nav__logo-img" width="36" height="36" />
+                <span>VDM Digital</span>
+            </a>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="/#features" class="nav__link">Services</a></li>
+                <li><a href="/#process" class="nav__link">Process</a></li>
+                <li><a href="/#testimonials" class="nav__link">Testimonials</a></li>
+                <li><a href="/contact.html" class="nav__link nav__link--cta nav__link--active" id="nav-contact-btn">Get
+                        in Touch</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero" id="contact-hero">
+        <div class="hero__bg">
+            <div class="hero__gradient"></div>
+            <div class="hero__grid"></div>
+        </div>
+        <div class="contact-hero__container">
+            <div class="contact-hero__header reveal">
+                <span class="section-tag">Contact Us</span>
+                <h1 class="section-title section-title--large">Let's build something <span class="text-gradient">amazing
+                        together</span></h1>
+                <p class="section-subtitle">Tell us about your project and we'll get back to you within 24 hours with a
+                    free consultation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact" id="contact-section">
+        <div class="contact__container">
+            <div class="contact__grid">
+                <!-- Contact Form -->
+                <div class="contact__form-wrapper reveal" id="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required
+                                autocomplete="name" />
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="john@company.com" required autocomplete="email" />
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company <span
+                                    class="form-optional">(optional)</span></label>
+                            <input type="text" id="company" name="company" class="form-input" placeholder="Your Company"
+                                autocomplete="organization" />
+                        </div>
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Project Budget</label>
+                            <select id="budget" name="budget" class="form-input form-select" required>
+                                <option value="" disabled selected>Select a range</option>
+                                <option value="5k-10k">R50,000 – R100,000</option>
+                                <option value="10k-25k">R100,000 – R250,000</option>
+                                <option value="25k-50k">R250,000 – R500,000</option>
+                                <option value="50k+">R500,000+</option>
+                            </select>
+                            <span class="form-error" id="budget-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Tell us about your project</label>
+                            <textarea id="message" name="message" class="form-input form-textarea"
+                                placeholder="What are you looking to build? What's your timeline?" rows="5"
+                                required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full" id="contact-submit-btn">
+                            <span class="btn__text">Send Message</span>
+                            <span class="btn__loader" hidden>
+                                <svg class="spinner" width="20" height="20" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none"
+                                        stroke-dasharray="30 70" />
+                                </svg>
+                            </span>
+                            <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="contact-form__success" id="form-success" hidden>
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent!</h3>
+                        <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact__info reveal">
+                    <div class="contact-info-card" id="info-email">
+                        <div class="contact-info-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact-info-card__title">Email Us</h4>
+                            <a href="mailto:hello@vdmdigital.com"
+                                class="contact-info-card__value">hello@vdmdigital.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card" id="info-response">
+                        <div class="contact-info-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact-info-card__title">Response Time</h4>
+                            <p class="contact-info-card__value">Within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card" id="info-location">
+                        <div class="contact-info-card__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact-info-card__title">Location</h4>
+                            <p class="contact-info-card__value">South Africa<br />Remote-first team</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__faq">
+                        <h4 class="contact__faq-title">Frequently Asked Questions</h4>
+                        <details class="faq-item" id="faq-1">
+                            <summary class="faq-item__question">How long does a typical project take?</summary>
+                            <p class="faq-item__answer">Most e-commerce stores take 6–12 weeks from kickoff to launch,
+                                depending on complexity. We'll give you a clear timeline during our initial
+                                consultation.</p>
+                        </details>
+                        <details class="faq-item" id="faq-2">
+                            <summary class="faq-item__question">Do you offer ongoing support?</summary>
+                            <p class="faq-item__answer">Absolutely. We offer monthly retainer packages that cover
+                                maintenance, updates, performance monitoring, and priority support.</p>
+                        </details>
+                        <details class="faq-item" id="faq-3">
+                            <summary class="faq-item__question">What platforms do you work with?</summary>
+                            <p class="faq-item__answer">We're platform-agnostic. Whether it's Shopify, WooCommerce,
+                                custom-built, or headless commerce, we choose the best tool for your specific needs.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="/" class="nav__logo">
+                        <img src="/images/vdm-logo.png" alt="VDM Digital" class="nav__logo-img" width="36"
+                            height="36" />
+                        <span>VDM Digital</span>
+                    </a>
+                    <p class="footer__tagline">Professional e-commerce solutions that help businesses sell more online.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Company</h4>
+                        <a href="/#features" class="footer__link">Services</a>
+                        <a href="/#process" class="footer__link">Process</a>
+                        <a href="/#testimonials" class="footer__link">Testimonials</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Connect</h4>
+                        <a href="/contact.html" class="footer__link">Contact Us</a>
+                        <a href="mailto:hello@vdmdigital.com" class="footer__link">hello@vdmdigital.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 VDM Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+  "_comment": "Example Gamma API payload for a 10-slide investor pitch deck",
+
+  "inputText": "Create a 10-slide investor pitch deck for 'AcmeTech', a B2B SaaS platform that automates financial compliance for mid-market companies. Slide 1: Bold title slide with tagline 'Compliance, Automated.' Slide 2: The $12B compliance problem — manual processes, costly errors, regulatory fines. Slide 3: Market opportunity — 50,000+ mid-market firms spending $200K+/yr on compliance. Slide 4: Product overview — AI-powered monitoring, real-time alerts, audit-ready reports. Slide 5: Key features — automated document review, regulatory change tracking, risk scoring dashboard. Slide 6: How it works — 3-step flow: connect data sources → AI analyzes → actionable reports. Slide 7: Traction — 120 customers, $2.4M ARR, 95% retention, 3x YoY growth. Slide 8: Business model — tiered SaaS pricing from $499/mo to enterprise custom. Slide 9: Team — ex-Deloitte, ex-Google founders with 40+ years combined compliance and engineering experience. Slide 10: The ask — raising $5M Series A to scale sales and expand to EU markets. CTA: Schedule a meeting.",
+
+  "textMode": "generate",
+  "format": "presentation",
+  "numCards": "10",
+  "cardSplit": "auto",
+  "exportAs": "pdf",
+
+  "themeId": "corporate",
+
+  "textOptions": {
+    "amount": "concise",
+    "language": "en"
+  },
+
+  "imageOptions": {
+    "source": "aiGenerated",
+    "model": "dall-e-3",
+    "style": "Clean, modern corporate imagery with navy blue and white tones. Professional data visualizations, abstract geometric patterns, and polished business photography."
+  },
+
+  "cardOptions": {
+    "headerFooter": {
+      "top-right": {
+        "type": "image",
+        "source": "custom",
+        "src": "https://example.com/acmetech-logo.png",
+        "size": "md"
+      }
+    }
+  }
+}
